@@ -1,0 +1,89 @@
+/*-------------Responsive Style---------------------------------------*/
+@media (min-width: 575px) {
+	.box{
+		&.box-news{
+			.news-text{
+				padding: 3rem 2rem 3rem;
+				h4{min-height: 100px;}
+				p{min-height: 66px;}
+			}
+		}
+	}	
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+	.mission-area {
+		margin-top: -68px;
+		padding: 40px 100px;
+	}
+}
+
+
+
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+
+	#header .menu-section {
+		padding: 0.5rem 0;
+	}
+
+}
+
+@media (max-width: 767.98px) {
+
+	#header {
+		background-color: $white;
+
+		.header-wrapper {
+			flex-direction: row-reverse;
+		}
+	}
+
+	#header .logo img {
+		height: 44px;
+	}
+
+	.main-banner-h {
+		height: 520px;
+	  }
+
+	.slider-child {
+
+		.slider-content-box {
+
+			h1 {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 574.98px) {
+	.box {
+	
+		&.view2 {	
+			.box-content {
+				padding: 1.5rem;
+			}
+		}
+	}
+	.service-pic-text {
+		.service-pic {
+			.ratio {
+				&:before {
+					padding-top: 56.25%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 419.98px) {
+	#header .logo img {
+		height: 36px;
+	}
+}

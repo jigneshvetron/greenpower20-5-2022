@@ -1,0 +1,63 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} {{- if
+$data.homepage.banner.enable }} {{- with $data.homepage.banner }}
+<!-- Start of Slider section -->
+<section class="sec-slider">
+  <div class="swiper-container swiper-one main-banner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide-active">
+        <div class="slider-child view1">
+          <div
+            class="slider-img-bg img-zooming"
+            data-background="{{ site.Params.images.banner1 | absURL }}"
+          ></div>
+          <div class="background_overlay"></div>
+          <div class="container">
+            <div class="main-banner-h">
+              <div class="slider-content-box sec-title">
+                <!-- <span class="title-tag text-uppercase"><img src="{{ site.Params.images.icon5 | absURL }}" alt="">producing what matters!</span> -->
+                <h1>{{ .title1 }}</h1>
+                <!-- <p>{{ .desc1 }}</p> -->
+                <div class="row g-2 slide-btn-1">
+                  <div class="col-12 col-md-auto">
+                    <div class="btn-style1">
+                      <a class="btn-arrow btn" href="{{ .link }}"
+                        >{{ .learnmore }} <i class="arrow"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-auto">
+                    <a
+                      class="btn btn-outline-white-p text-white btn-arrow"
+                      href="tel:34651720792"
+                      >{{ .talk }} +34 651 720 792 <i class="arrow"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="swiper-slide">
+						<div class="slider-child view2">
+						<div class="slider-img-bg img-zooming" data-background="{{ site.Params.images.banner2 | absURL }}"></div>
+						<div class="background_overlay"></div>
+						<div class="container">
+							<div class="main-banner-h">
+							<div class="slider-content-box text-center sec-title">
+								<span class="title-tag text-uppercase"><img src="{{ site.Params.images.icon5 | absURL }}" alt="">producing what matters!</span>
+								<h1>{{ .title2 }}</h1>
+								<p>{{ .desc2 }}</p>
+								<div class="slide-btn-1">
+								<div class="btn-style1"><a class="btn-arrow btn" href="#">{{ .learnmore }} <i class="arrow"></i></a></div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div> -->
+    </div>
+  </div>
+</section>
+<!-- End of Slider section -->
+{{- end }} {{- end }}

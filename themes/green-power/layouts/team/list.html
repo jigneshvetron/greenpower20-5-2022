@@ -1,0 +1,103 @@
+{{ define "main" }}
+
+    <!-- Start of Slider section -->
+    {{ with .Params.slider }}
+        <section class="inner-banner">
+            <div class="slider-child view1">
+                <div class="slider-img-bg img-zooming" data-background="{{ .Teambanner | absURL }}"></div>
+                <div class="background_overlay"></div>
+                <div class="container">
+                    <div class="slider-content-box sec-title">
+                        <h1 class="p-0 m-0">{{ .Title }}</h1>
+                        <!-- <p class="mb-3">{{ .Desc }}</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+    <!-- End of Slider section -->
+    {{ with .Params.block }}
+        <section class="sec-gap meet-the-team">
+            <div class="container">
+                <!-- <div class="sec-head sec-title title-middle text-center border-bottom mb-3">
+                    <span class="title-tag">{{ .question }}</span>
+                    <h2>{{ .title }}</h2>
+                </div> -->
+                <div class="sec-body">
+                    <div class="row mb-sm-5">
+
+                        <div class="col-md-4">
+                            <!-- Team -->
+                            <div class="w-65 text-center mx-auto mb-5">
+                                <img class="img-fluid img-left-top border rounded mb-3 teamimg" src="{{ .member2 | absURL }}" alt="Team Member">
+                                <h6 class="mb-1">{{ .member2name }}</h6>
+                                <span class="d-block"><b>{{ .member2post }}</b></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member2phone | absURL }}" /></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member2email | absURL }}" /></span>
+                            </div>
+                            <!-- End Team -->
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Team -->
+                            <div class="w-65 text-center mx-auto mb-5">
+                                <img class="img-fluid img-center border rounded mb-3 teamimg" src="{{ .member1 | absURL }}" alt="Team Member">
+                                <h6 class="mb-1">{{ .member1name }}</h6>
+                                <span class="d-block"><b>{{ .member1post }}</b></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member1email | absURL }}" /></span>
+                            </div>
+                            <!-- End Team -->
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Team -->
+                            <div class="w-65 text-center mx-auto mb-5">
+                                <img class="img-fluid img-right-top border rounded mb-3 teamimg" src="{{ .member3 | absURL }}" alt="Team Member">
+                                <h6 class="mb-1">{{ .member3name }}</h6>
+                                <span class="d-block"><b>{{ .member3post }}</b></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member3phone | absURL }}" /></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member3email | absURL }}" /></span>
+                            </div>
+                            <!-- End Team --> 
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Team -->
+                            <div class="w-65 text-center mx-auto mb-5">
+                                <img class="img-fluid img-left-top border rounded mb-3 teamimg" src="{{ .member4 | absURL }}" alt="Team Member">
+                                <h6 class="mb-1">{{ .member4name }}</h6>
+                                <span class="d-block"><b>{{ .member4post }}</b></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member4phone | absURL }}" /></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member4email | absURL }}" /></span>  
+                            </div>
+                            <!-- End Team -->
+                        </div>
+                        <div class="col-md-4">
+                        <!-- Team -->
+                            <div class="w-65 text-center mx-auto mb-5">
+                                <img class="img-fluid img-center border rounded mb-3 teamimg" src="{{ .member6 | absURL }}" alt="Team Member">
+                                <h6 class="mb-1">{{ .member6name }}</h6>
+                                <span class="d-block"><b>{{ .member6post }}</b></span>
+                                <span class="d-block">{{ .member6phone }}</span>
+                                <span class="d-block">{{ .member6email }}</span>
+                            </div>
+                            <!-- End Team -->
+                        </div>
+                        <div class="col-md-4">
+                        <!-- Team -->
+                            <div class="w-65 text-center mx-auto mb-5">
+                                <img class="img-fluid img-right-top border rounded mb-3 teamimg" src="{{ .member5 | absURL }}" alt="Team Member">
+                                <h6 class="mb-1">{{ .member5name }}</h6>
+                                <span class="d-block"><b>{{ .member5post }}</b></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member5phone | absURL }}" /></span>
+                                <span class="d-block"> <img class="img-fluid" src="{{ .member5email | absURL }}" /></span>
+                            </div>
+                            <!-- End Team -->
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+        <script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='https://assets.freshsales.io/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init('https://medical24.myfreshworks.com/crm/sales','a11dc456583d072747d62f16d56484abc239fc4a23294b38e4e5774226c7e615',true);}})();</script> 
+    {{ end }}
+
+    {{- partial "sub-contact.html" . }}
+
+{{ end }}

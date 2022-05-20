@@ -1,0 +1,36 @@
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Start of Slider section -->
+  {{ with .Params.meta }}<meta name="description" content="{{ .description }}">{{ end }}
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ hugo.Generator }}
+
+  {{ "<!-- plugins -->" | safeHTML }}
+  {{ range site.Params.plugins.css }}
+  <link rel="stylesheet" href="{{ .link | absURL }} ">
+  {{ end }}
+
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+
+
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
+  <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
+{{ with .Params.og }}
+<meta property="og:title" content="{{ .title }}" />
+<meta property="og:description" content="{{ .description }}" />
+<meta property="og:type" content="{{ .type }}" />
+<meta property="og:url" content="{{ .url | absURL  }}" /><meta property="og:image" content="{{ .image | absURL  }}"/>
+{{ end }}
+  <!-- {{ with .Params.image }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  {{ end }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/google_analytics_async.html" . }} -->
+</head>
+

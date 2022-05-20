@@ -1,0 +1,46 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} {{- if
+$data.homepage.whoweare.enable }} {{- with $data.homepage.whoweare }}
+<!-- Start of site who we are section -->
+<section class="sec-gap pt-md-0">
+  <div class="container">
+    <div class="row g-3 g-xl-5 align-items-center">
+      <div class="col-lg-6 col-md-12">
+        <div class="sec-head sec-title">
+          <!-- <span class="title-tag"><img src="{{ site.Params.images.icon5 | absURL }}" alt="">Who We Are</span> -->
+          <h2 class="h1">{{ .title }}</h2>
+        </div>
+        <div class="sec-body">
+          <div class="row gy-2 gy-lg-4">
+            <div class="col-12">
+              <div class="sp-pera">
+                <p>{{ .desc1 }}</p>
+                <p>{{ .desc2 }}</p>
+              </div>
+            </div>
+            <div class="col-auto">
+              <a
+                target="_blank"
+                class="btn-icon link-arrow text-uppercase"
+                href="https://www.youtube.com/watch?v=xKxrkht7CpY"
+              >
+                <span>{{ .span }}</span>
+                <i class="arrow"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="about-img row g-2 g-xl-3">
+          <div class="col-12">
+            <div class="ratio ratioimg">
+              <img src="{{ site.Params.images.loadinghome | absURL }}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of site who we are section -->
+{{- end }} {{- end }}

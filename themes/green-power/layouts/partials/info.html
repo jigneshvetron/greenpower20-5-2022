@@ -1,0 +1,92 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} {{- if
+$data.homepage.info.enable }} {{- with $data.homepage.info }}
+<!-- Start of site info section -->
+<section class="sec-gap pt-0 site-info-section">
+  <div class="container">
+    <div class="row g-0 site-info-content">
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="site-info-icon-text position-relative">
+          <div class="site-info-icon float-left">
+            <img src="{{ site.Params.images.stateofart | absURL }}" alt="" />
+          </div>
+          <div class="site-info-text headline">
+            <h4 class="h5">{{ .title1 | markdownify}}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="site-info-icon-text position-relative">
+          <div class="site-info-icon float-left">
+            <img src="{{ site.Params.images.bestalticon | absURL }}" alt="" />
+          </div>
+          <div class="site-info-text headline">
+            <h4 class="h5">{{ .title2 }}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="site-info-icon-text position-relative">
+          <div class="site-info-icon float-left">
+            <img
+              src="{{ site.Params.images.globalexpertise | absURL }}"
+              alt=""
+            />
+          </div>
+          <div class="site-info-text headline">
+            <h4 class="h5">{{ .title3 }}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="site-info-icon-text position-relative">
+          <div class="site-info-icon float-left">
+            <img src="{{ site.Params.images.lowcost | absURL }}" alt="" />
+          </div>
+          <div class="site-info-text headline">
+            <h4 class="h5">{{ .title4 }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-2 g-lg-4">
+      <div class="col-12 col-sm-3 text-center">
+        <div class="box" style="padding: 2rem">
+          <div class="step-text">
+            <h3>{{ .title5 }}</h3>
+            <p>{{ .desc5 }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3 text-center">
+        <div class="box" style="padding: 2rem">
+          <div class="step-text">
+            <h3>{{ .title6 }}</h3>
+            <p>
+              {{ .desc6 }}<a href="/solar-panel" style="color: blue"
+                >{{.learnmore}}</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3 text-center">
+        <div class="box" style="padding: 2rem">
+          <div class="step-text">
+            <h3>{{ .title7 }}</h3>
+            <p>{{ .desc7 }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3 text-center">
+        <div class="box" style="padding: 2rem">
+          <div class="step-text">
+            <h3>{{ .title8 }}</h3>
+            <p>{{ .desc8 }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of site info section -->
+{{- end }} {{- end }}

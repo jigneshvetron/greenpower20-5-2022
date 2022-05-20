@@ -1,0 +1,98 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} {{- if
+$data.homepage.features.enable }} {{- with $data.homepage.features }}
+<!-- Start of site Features section -->
+<section class="sec-gap sec-features d-bg">
+  <!-- <video class="bg-item" autoplay="" loop="true" muted="">
+    <source type="video/mp4" src="{{ site.Params.videos.video1 | absURL }}" />
+  </video> -->
+  <div class="bg-item overlay"></div>
+  <div class="container">
+    <!-- <div class="sec-head sec-title title-middle text-center mx7 m-auto">
+                    <span class="title-tag">
+                      {{ .desc1 }}
+                    </span>
+                    <h2>{{ .title1 }}</h2>
+                  </div> -->
+    <div class="sec-body">
+      <div class="row g-2 g-lg-3">
+        <div class="col-md-4">
+          <div class="features-icon-text text-center featureblock">
+            <div class="features-icon">
+              <img src="{{ site.Params.images.team | absURL }}" alt="" />
+            </div>
+            <div class="features-text headline pera-content">
+              <h3><a href="{{ .urlteam | absURL }}">{{ .title2 }}</a></h3>
+              <p>{{ .desc2 }}</p>
+            </div>
+            <!-- <div class="features-hover-content">
+                            <div class="fh-icon-bg">
+                              <img src="{{ site.Params.images.team | absURL }}" alt="">
+                            </div>
+                            <div class="features-hover-text headline pera-content">
+                              <h3>{{ .title3 }}</h3>
+                              <p>{{ .desc3 }}</p>
+                              <div class="fh-more">
+                                <a href="#"><i class="icon-arrow-down"></i></a>
+                              </div>
+                            </div>
+                          </div> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="features-icon-text text-center featureblock">
+            <div class="features-icon">
+              <img
+                src="{{ site.Params.images.globalexpertise | absURL }}"
+                alt=""
+              />
+            </div>
+            <div class="features-text headline pera-content">
+              <!-- <h3><a href="javascript:;">{{ .title4 }}</a></h3> -->
+              <h3><a href="{{ .urlprojects | absURL }}">{{ .title4 }}</a></h3>
+              <p>{{ .desc4 }}</p>
+            </div>
+            <!-- <div class="features-hover-content">
+                            <div class="fh-icon-bg">
+                              <img src="{{ site.Params.images.globalexpertise | absURL }}" alt="">
+                            </div>
+                            <div class="features-hover-text headline pera-content">
+                              <h3>{{ .title5 }}</h3>
+                              <p>{{ .desc5 }}</p>
+                              <div class="fh-more">
+                                <a href="#"><i class="icon-arrow-down"></i></a>
+                              </div>
+                            </div>
+                          </div> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="features-icon-text text-center featureblock">
+            <div class="features-icon">
+              <img src="{{ site.Params.images.team | absURL }}" alt="" />
+            </div>
+            <div class="features-text headline pera-content">
+              <h3><a href="{{ .urlnews | absURL }}">{{ .title6 }}</a></h3>
+              <p>{{ .desc6 }}</p>
+            </div>
+            <!-- <div class="features-hover-content">
+                            <div class="fh-icon-bg">
+                              <img src="{{ site.Params.images.team | absURL }}" alt="">
+                            </div>
+                            <div class="features-hover-text headline pera-content">
+                              <h3>{{ .title7 }}</h3>
+                              <p>{{ .desc7 }}</p>
+                              <div class="fh-more">
+                                <a href="#"><i class="icon-arrow-down"></i></a>
+                              </div>
+                            </div>
+                          </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of site Features section -->
+{{- end }} {{- end }} {{ with .Params.block }}
+<img src="{{ .team  | absURL }}" alt="" />
+{{- end }}

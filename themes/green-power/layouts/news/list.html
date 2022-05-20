@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+<!-- Start of Slider section -->
+{{ with .Params.slider }}
+<section class="inner-banner">
+  <div class="slider-child view1">
+    <div
+      class="slider-img-bg img-zooming"
+      data-background="{{ .Newsbanner | absURL }}"
+    ></div>
+    <div class="background_overlay"></div>
+    <div class="container">
+      <div class="slider-content-box sec-title">
+        <h1 class="p-0 m-0">{{ .Title }}</h1>
+        <p class="mb-3">{{ .Desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End of Slider section -->
+
+{{ with .Params.block }}
+<section class="sec-gap bg-light">
+  <div class="container">
+    <div class="row g-2 g-lg-3 g-xl-5">
+      <div class="col-12 col-sm-6 col-md-4">
+        <a href="{{ .newsdetail }}" class="box box-news">
+          <div class="news-text">
+            <h4>{{ .title }}</h4>
+            <p>{{ .desc }}</p>
+            <span class="text-primary">{{ .learnmore }}</span>
+            <div class="arrow-circle">
+              <i class="arrow primary thin lg"></i>
+            </div>
+          </div>
+          <div class="news-img">
+            <div class="ratio ratio-21x9">
+              <img src="{{ .dummy1 | absURL }}" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <a
+          href="https://www.white-ibiza.com/the-white-isle-goes-green-green-power/"
+          class="box box-news"
+        >
+          <div class="news-text">
+            <h4>{{ .title1 }}</h4>
+            <p>{{ .desc1 }}</p>
+            <span class="text-primary">{{ .learnmore1 }}</span>
+            <div class="arrow-circle">
+              <i class="arrow primary thin lg"></i>
+            </div>
+          </div>
+          <div class="news-img">
+            <div class="ratio ratio-21x9">
+              <img src="{{ .dummy7 | absURL }}" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} {{- partial "sub-contact.html" . }} {{ end }}

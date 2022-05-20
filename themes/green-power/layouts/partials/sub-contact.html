@@ -1,0 +1,31 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{- if $data.homepage.subcontact.enable }}
+        {{- with $data.homepage.subcontact }}
+            <!-- Start of site sub contact section -->
+              <section class="sec-gap sec-visible bg-primary pt-0">
+                  <div class="container">
+                      <div class="box view2 sec-body-ng">
+                          <div class="row g-0 p-0">
+                              <div class="col-12 col-sm-3">
+                                  <div class="primary-img">
+                                      <img src="{{ .banner1 | absURL }}" />
+                                  </div>
+                              </div>
+                              <div class="col-12 col-sm-9 align-self-center">
+                                  <div class="box-content">
+                                      <div class="fw3 h2">{{ .title }} <a class="fw6 text-primary text-nowrap" href="tel:34651720792">+34 651 720 792</a>, <a class="fw6 text-primary text-nowrap" href="tel:34655139541">+34 655 139 541</a></div>
+                                      <!-- <p>{{ .desc }}</p> -->
+                                      <div class="btn-style1">
+                                          <a class="btn-arrow btn" href="{{ .urlinquiry }}">{{ .inquirynow }} <i class="arrow"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="watermark"><i class="icon-call-in"></i></div>
+                      </div>
+                  </div>
+              </section>
+            <!-- End of site sub contact section -->
+        {{- end }}
+    {{- end }}

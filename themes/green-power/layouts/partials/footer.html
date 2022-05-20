@@ -1,0 +1,203 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} {{ if
+$data.homepage.footer.enable }} {{ with $data.homepage.footer }}
+<footer class="sec-footer">
+  <div class="sec-gap-sm">
+    <div class="container">
+      <div class="row g-0 g-md-3 g-xl-5">
+        <div class="col-md-4 text-center">
+          <div class="footer-info font14">
+            <a href="{{ .urlmain }}"
+              ><img src="{{ site.Params.logo2 | absURL }}" alt="Green PWR Logo"
+            /></a>
+            <p class="text-justify">{{ .desc }}</p>
+            <ul class="social view1">
+              <li>
+                <a href="https://www.instagram.com/greenpowereu/"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/greenpowereu  "
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://wa.me/+447818565879"
+                  ><i class="bx bxl-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row g-0 g-md-3 g-xl-5">
+            <div class="col-lg col-md-6 col-12">
+              <div class="single-footer-widget nav-folderized">
+                <div class="ftr__list folderized-child">
+                  <span class="h4"
+                    ><span>{{ .explore }}</span>
+                    <i class="bx bxs-chevron-down i-down"></i
+                    ><i class="bx bxs-chevron-up i-up"></i
+                  ></span>
+                  <ul class="folderized-link-box">
+                    <li><a href="{{ .urlabout }}">{{ .about }}</a></li>
+                    <li><a href="{{ .urlnews }}">{{ .news }}</a></li>
+                    <li><a href="{{ .urlprojects }}">{{ .projects }}</a></li>
+                    <li><a href="{{ .urlcontact }}">{{ .contact }}</a></li>
+                    <li><a href="{{ .urlteam }}">{{ .meettheteam }}</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-md-6 col-12">
+              <div class="single-footer-widget nav-folderized">
+                <div class="ftr__list folderized-child">
+                  <span class="h4"
+                    ><span>{{ .solutions }}</span>
+                    <i class="bx bxs-chevron-down i-down"></i
+                    ><i class="bx bxs-chevron-up i-up"></i
+                  ></span>
+                  <ul class="folderized-link-box">
+                    <li>
+                      <a href="{{ .urlresidential }}">{{ .residential }}</a>
+                    </li>
+                    <li>
+                      <a href="{{ .urlcommercial }}">{{ .commercial }}</a>
+                    </li>
+                    <li>
+                      <a href="#">Solar Parks</a>
+                    </li>
+                    <!-- <li>
+                      <a href="javascript::void(0);">{{ .waterpumps }}</a>
+                    </li>
+                    <li>
+                      <a href="javascript::void(0);">{{ .industries }}</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg col-md-6 col-12">
+              <div class="single-footer-widget nav-folderized">
+                <div class="ftr__list folderized-child">
+                  <span class="h4"
+                    ><span>{{ .products }}</span>
+                    <i class="bx bxs-chevron-down i-down"></i
+                    ><i class="bx bxs-chevron-up i-up"></i
+                  ></span>
+                  <ul class="folderized-link-box">
+                    <li><a href="{{ .urlpanel }}">{{ .panel }}</a></li>
+                    <li><a href="javascript::void(0);">{{ .inverter }}</a></li>
+                    <li><a href="javascript::void(0);">{{ .waterpump }}</a></li>
+                    <li><a href="javascript::void(0);">{{ .heater }}</a></li>
+                    <li><a href="javascript::void(0);">{{ .mounting }}</a></li>
+                    <li><a href="javascript::void(0);">{{ .lightning }}</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="single-footer-widget nav-folderized">
+                <div class="ftr__list folderized-child">
+                  <span class="h4"
+                    >{{ .address }}<i class="bx bxs-chevron-down i-down"></i
+                    ><i class="bx bxs-chevron-up i-up"></i
+                  ></span>
+                  <div class="folderized-link-box">
+                    <div class="contact-box">
+                      <div class="contact-box-child">
+                        <i class="bx bx-map"></i>{{ .address2 }}
+                      </div>
+                      <div class="contact-box-child">
+                        <i class="bx bx-mobile-alt"></i> +34 651 720 792, +34
+                        655 139 541
+                      </div>
+                      <div class="contact-box-child">
+                        <a href="mailto:info@greenpwr.eu" class="dark-link"
+                          ><i class="bx bx-envelope"></i> info@greenpwr.eu</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bootom">
+    <div class="container">
+      <div class="font14">
+        <p class="mb-1">
+          {{ .copyright }} ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          , <a href="#" target="_blank">{{ .greenpower }}</a> {{ .rights }}.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+{{ end }} {{ end }}
+
+<!-- Snipcart public key -->
+{{with site.Params.snipcart_api}}
+<div hidden id="snipcart" data-api-key="{{.}}"></div>
+{{end}}
+
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
+<!-- Main Script -->
+{{ $script := resources.Get "js/script.js" }}
+<script>
+  var input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    // allowDropdown: false,
+    // autoHideDialCode: false,
+    // autoPlaceholder: "off",
+    // dropdownContainer: document.body,
+    // excludeCountries: ["us"],
+    // formatOnDisplay: false,
+    // geoIpLookup: function(callback) {
+    //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+    //     var countryCode = (resp && resp.country) ? resp.country : "";
+    //     callback(countryCode);
+    //   });
+    // },
+    // hiddenInput: "full_number",
+    // initialCountry: "auto",
+    // localizedCountries: { 'de': 'Deutschland' },
+    // nationalMode: false,
+    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    // placeholderNumberType: "MOBILE",
+    // preferredCountries: ['cn', 'jp'],
+    // separateDialCode: true,
+    utilsScript: "http://localhost:1313/plugins/js/utils.js",
+  });
+</script>
+<script src="https://test.greenpwr.eu//plugins/js/airtable.js"></script>
+<script src="{{ $script.Permalink }}"></script>
+<script>
+  var fbUrl = $(".fbUrl").data("url");
+  var twUrl = $(".twUrl").data("url");
+  var lnUrl = $(".lnUrl").data("url");
+  var baseUrl = $(".base_url").val();
+  $(".fbUrl").prop(
+    "href",
+    "https://www.facebook.com/sharer.php?{{ .Site.BaseURL }}" + fbUrl
+  );
+  $(".twUrl").prop(
+    "href",
+    "https://twitter.com/intent/tweet?{{ .Site.BaseURL }}" + twUrl
+  );
+  $(".lnUrl").prop(
+    "href",
+    "https://www.linkedin.com/shareArticle?{{ .Site.BaseURL }}" + lnUrl
+  );
+</script>

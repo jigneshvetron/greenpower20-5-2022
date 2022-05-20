@@ -1,0 +1,84 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{- if $data.homepage.projects.enable }}
+        {{- with $data.homepage.projects }}
+            <!-- Start of site projects section -->
+            <section class="sec-gap project-section">
+                <div class="sec-head sec-title title-middle mx6 m-auto text-center">
+                  <span class="title-tag">{{ .span }}</span>
+                  <h2>{{ .title1 }}</h2>
+                </div>
+                <div class="sec-body">
+                  <div class="swiper-container swiper-view1 swiper-two">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="project-img d-plus">
+                          <div class="ratio">
+                            <img class="d-plus-img" src="{{ site.Params.images.pr1 | absURL }}" alt="">
+                          </div>
+                          <div class="project-item-text">
+                            <p>{{ .title2 }}</p>
+                            <h3><a href="#">{{ .a1 }}</a></h3>
+                          </div>
+                          <!-- <a class="a-plus" href="{{ site.Params.images.pr1 | absURL }}"></a> -->
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img d-plus">
+                          <div class="ratio">
+                            <img class="d-plus-img" src="{{ site.Params.images.pr2 | absURL }}" alt="">
+                          </div>
+                          <div class="project-item-text pera-content headline">
+                            <p>{{ .title3 }}</p>
+                            <h3><a href="#">{{ .a2 }}</a></h3>
+                          </div>
+                          <a class="a-plus" data-lightbox="roadtrip" href="{{ site.Params.images.pr1 | absURL }}"></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img d-plus">
+                          <div class="ratio">
+                            <img class="d-plus-img" src="{{ site.Params.images.pr3 | absURL }}" alt="">
+                          </div>
+                          <div class="project-item-text pera-content headline">
+                            <p>{{ .title4 }}</p>
+                            <h3><a href="#">{{ .a3 }}</a></h3>
+                          </div>
+                          <!-- <a class="a-plus" data-lightbox="roadtrip" href="{{ site.Params.images.pr1 | absURL }}"></a> -->
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img d-plus">
+                          <div class="ratio">
+                            <img class="d-plus-img" src="{{ site.Params.images.pr4 | absURL }}" alt="">
+                          </div>
+                          <div class="project-item-text pera-content headline">
+                            <p>{{ .title5 }}</p>
+                            <h3><a href="#">{{ .a4 }}</a></h3>
+                          </div>
+                          <!-- <a class="a-plus" data-lightbox="roadtrip" href="{{ site.Params.images.pr1 | absURL }}"></a> -->
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img d-plus">
+                          <div class="ratio">
+                            <img class="d-plus-img" src="{{ site.Params.images.pr5 | absURL }}" alt="">
+                          </div>
+                          <div class="project-item-text pera-content headline">
+                            <p>{{ .title6 }}</p>
+                            <h3><a href="#">{{ .a5 }}</a></h3>
+                          </div>
+                          <!-- <a class="a-plus" data-lightbox="roadtrip" href="{{ site.Params.images.pr1 | absURL }}"></a> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-control-1">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- End of site projects section -->
+        {{- end }}
+    {{- end }}

@@ -1,0 +1,88 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{- if $data.homepage.blog.enable }}
+        {{- with $data.homepage.blog }}
+            <!-- Start of site blog section -->
+            <section class="sec-gap bg-light sec-blog">
+                <div class="container">
+                  <div class="sec-head sec-title title-middle text-center mx6 m-auto">
+                    <h2>{{ .title }}</h2>
+                  </div>
+                  <div class="sec-body">
+                    <div class="row g-2 g-lg-4">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="blog-post-item d-plus">
+                          <div class="blog-post-pic">
+                            <div class="ratio ratio-1x1">
+                              <img src="{{ site.Params.images.bp2 | absURL }}" alt="" class="d-plus-img">
+                            </div>
+                            <a class="a-plus" href="#"></a>
+                          </div>
+                          <div class="blog-post-text">
+                            <h3><a href="#">{{ .atitle1 }}</a></h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12">
+                        <div class="row g-2 g-lg-4 blog-post-list-sm">
+                          <div class="col-12 col-sm-6">
+                            <div class="blog-post-item d-plus">
+                              <div class="blog-post-pic">
+                                <div class="ratio ratio-1x1">
+                                  <img src="{{ site.Params.images.bp1 | absURL }}" alt="" class="d-plus-img">
+                                </div>
+                                <a class="a-plus" href="#"></a>
+                              </div>
+                              <div class="blog-post-text">
+                                <h3><a href="#">{{ .atitle2 }}</a></h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="blog-post-item d-plus">
+                              <div class="blog-post-pic">
+                                <div class="ratio ratio-1x1">
+                                  <img src="{{ site.Params.images.bp2 | absURL }}" alt="" class="d-plus-img">
+                                </div>
+                                <a class="a-plus" href="#"></a>
+                              </div>
+                              <div class="blog-post-text">
+                                <h3><a href="#">{{ .atitle3 }}</a></h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="blog-post-item d-plus">
+                              <div class="blog-post-pic">
+                                <div class="ratio ratio-1x1">
+                                  <img src="{{ site.Params.images.bp2 | absURL }}" alt="" class="d-plus-img">
+                                </div>
+                                <a class="a-plus" href="#"></a>
+                              </div>
+                              <div class="blog-post-text">
+                                <h3><a href="#">{{ .atitle4 }}</a></h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="blog-post-item d-plus">
+                              <div class="blog-post-pic">
+                                <div class="ratio ratio-1x1">
+                                  <img src="{{ site.Params.images.bp2 | absURL }}" alt="" class="d-plus-img">
+                                </div>
+                                <a class="a-plus" href="#"></a>
+                              </div>
+                              <div class="blog-post-text">
+                                <h3><a href="#">{{ .atitle5 }}</a></h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- End of site blog section -->
+        {{- end }}
+    {{- end }}

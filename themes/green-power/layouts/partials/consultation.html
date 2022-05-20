@@ -1,0 +1,29 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{- if $data.homepage.consultation.enable }}
+        {{- with $data.homepage.consultation }}
+            <!-- Start of site consultation section -->
+            <section class="sec-gap sec-consalt d-bg">
+                <img class="bg-item" src="{{ site.Params.images.sm1 | absURL }}" />
+                <div class="bg-item overlay"></div>
+                <div class="container">
+                  <div class="row g-2 g-md-3 g-xl-5 align-items-center justify-content-center text-center">
+                    <div class="col-12 col-md-auto hide-md">
+                      <div class="consalt-icon">
+                        <i class="bx bx-phone-call"></i>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md">
+                      <div class="consalt-text">
+                        <h3 class="h2">{{ .title }} <a href="tel:34651720792" class="ml-3 text-nowrap">+34 651 720 792</a></h3>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                      <a class="btn btn-lg btn-outline-white-s text-white" href="{{ .contacturl }}">{{ .contact }} <i class="arrow"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- End of site consultation section -->
+        {{- end }}
+    {{- end }}

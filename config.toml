@@ -1,0 +1,213 @@
+################################### Default Configuration ############################
+baseurl = "https://greenpwr.eu/"
+title = "Green Power Project"
+theme = "green-power"
+# post excert
+summarylength = "20"
+# google analytics
+googleAnalytics = "" # Ex: UA-123-45
+# disable language
+disableLanguages = [] # disable language from here
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+#################################### Plugins ##########################################
+
+# CSS Plugins
+#[[params.plugins.css]]
+#link = "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap"
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/css/custom.css"
+[[params.plugins.css]]
+link = "plugins/css/animate.css"
+[[params.plugins.css]]
+link = "plugins/swiper/swiper-bundle.min.css"
+[[params.plugins.css]]
+link = "plugins/css/core.css"
+[[params.plugins.css]]
+link = "plugins/css/style.css"
+[[params.plugins.css]]
+link = "plugins/boxicons/css/boxicons.min.css"
+[[params.plugins.css]]
+link = "plugins/css/intlTelInput.css"
+
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/js/custom.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery-3.5.1.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/js/bootstrap.bundle.min.js"
+[[params.plugins.js]]
+link = "plugins/js/easing.min.js"
+[[params.plugins.js]]
+link = "plugins/js/superfish.min.js"
+[[params.plugins.js]]
+link = "plugins/js/lozad.min.js"
+[[params.plugins.js]]
+link = "plugins/js/wow.min.js"
+[[params.plugins.js]]
+link = "plugins/swiper/swiper-bundle.min.js"
+[[params.plugins.js]]
+link = "plugins/fancybox/jquery.fancybox.min.js"
+[[params.plugins.js]]
+link = "plugins/js/form.js"
+[[params.plugins.js]]
+link = "plugins/js/script.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/js/intlTelInput.js"
+[[params.plugins.js]]
+link = "plugins/js/airtable.js"
+#[[params.plugins.js]]
+#link = "plugins/js/airtableform.js"
+#[[params.plugins.js]]
+#link = "plugins/js/mailchimp.js"
+[[params.plugins.js]]
+link = "plugins/js/jqueryvalidation.js"
+[[params.plugins.js]]
+link = "plugins/js/validation.js"
+
+###################################### Navigation ######################################
+
+# homepage section menu
+[[menu.main]]
+name = "Home"
+slug = "home"
+weight = 1
+
+[[menu.main]]
+name = "Residential"
+slug = "residential"
+weight = 2
+
+[[menu.main]]
+name = "Commerical"
+slug = "commerical"
+weight = 3
+
+[[menu.main]]
+name = "Technologies"
+slug = "technologies"
+weight = 4
+
+[[menu.main]]
+name = "Contact"
+slug = "contact"
+weight = 5
+
+
+########################### Default parameters ##########################
+[params]
+logo = "images/logo/logo.png"
+logo2 = "images/logo/logo-2.png"
+loader = "images/ajax-loader.gif"
+logo_width = "100px"
+# Meta data
+description = ""
+author = "Green Power"
+# currency
+currency = "$"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# snipcart public api key
+snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif format
+
+# Subscription
+[params.subscription]
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
+################################### Images #####################################
+# Images
+[params.images]
+flaguk = "images/flag/flag-uk.svg"
+flages = "images/flag/flag-es.svg"
+flagde = "images/flag/flag-de.svg"
+flagnl = "images/flag/flag-nl.svg"
+flagfr = "images/flag/flag-fr.svg"
+banner1 = "images/banner/banner1.webp"
+banner2 = "images/banner/banner2.jpg"
+icon5 = "icon/icon5.svg"
+stateofart = "images/icons/finance.svg"
+bestalticon = "images/icons/warranty.svg"
+globalexpertise = "images/icons/solar.svg"
+lowcost = "images/icons/maintenance.svg"
+team = "images/icons/team.svg"
+loadinghome = "img/home/loading.jpg"
+abt1 = "img/about/loading.webp"
+abt2 = "img/about/ab2-min.webp"
+abt3 = "img/about/ab3-min.webp"
+residential = "images/residential.webp"
+commercial= "images/commercial.webp"
+waterpumps = "images/water-pumps.webp"
+industries = "images/industries.webp"
+avd1 = "img/advantage/avd1.png"
+avd2 = "img/advantage/avd2.webp"
+avd3 = "img/advantage/avd3.webp"
+avd4 = "img/advantage/avd4.webp"
+sm1 = "img/slider/sm1.webp"
+pr1 = "img/project/pr1.jpg"
+pr2 = "img/project/pr2.jpg"
+pr3 = "img/project/pr3.jpg"
+pr4 = "img/project/pr4.jpg"
+pr5 = "img/project/pr5.jpg"
+ex3 = "img/expertice/ex3.jpg"
+ex2 = "img/expertice/ex2.jpg"
+tbg = "img/background/tbg.jpg"
+bp2 = "img/blog/bp2.jpg"
+bp1 = "img/blog/bp1.jpg"
+
+################################### Videos #####################################
+# Videos
+[params.videos]
+video1 = "video/video1.mp4"
+
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 5
+
+################################### Spanish language #####################################
+[Languages.es]
+languageName = "Es"
+languageCode = "es-es"
+contentDir = "content/spanish"
+weight = 2
+
+################################### Deutsch language #####################################
+[Languages.du]
+languageName = "Du"
+languageCode = "du-du"
+contentDir = "content/deutsch"
+weight = 4
+
+################################### German language #####################################
+[Languages.ge]
+languageName = "Ge"
+languageCode = "ge-ge"
+contentDir = "content/german"
+weight = 3

@@ -1,0 +1,40 @@
+<!-- Page wise Languages Data starts -->
+<div class="col-auto">
+  <div class="btn-group language-selector">
+    {{ if .IsTranslated }}
+      {{ $siteLanguages := .Site.Languages}}
+        {{ $pageLang := .Page.Lang}}
+          {{ range .Page.AllTranslations }}
+            {{ $translation := .}}
+              {{ range $siteLanguages }}
+                {{ if eq $translation.Lang .Lang }}
+                  
+                    {{ if eq .Lang "en" }}
+                      <a class="language-item english-flg active" href="{{ $translation.Permalink }}" title="English">
+                        <img src="{{ site.Params.images.flaguk | absURL }}" val="en" /><span></span>
+                      </a>
+                    {{ else if eq .Lang "es" }}
+                      <a class="language-item spain-flg" href="{{ $translation.Permalink }}" title="Spain">
+                        <img src="{{ site.Params.images.flages | absURL }}" val="es-ES" /><span></span>
+                      </a>
+                    {{ else if eq .Lang "ge" }}
+                      <a class="language-item ger-flg" href="{{ $translation.Permalink }}" title="Germany">
+                        <img src="{{ site.Params.images.flagde | absURL }}" val="de" /><span></span>
+                      </a>
+                    {{ else if eq .Lang "du" }}
+                      <a class="language-item nl-flg" href="{{ $translation.Permalink }}" title="Dutch">
+                        <img src="{{ site.Params.images.flagnl | absURL }}" val="nl" /><span></span>
+                      </a>
+                    {{ else if eq .Lang "fr" }}
+                      <a class="language-item fr-flg" href="{{ $translation.Permalink }}" title="French">
+                        <img src="{{ site.Params.images.flagfr | absURL }}" val="fr" /><span></span>
+                      </a>
+                    {{ end }}
+                    
+                {{ end }}
+              {{ end }}
+          {{ end }}
+    {{ end }}
+  </div>
+</div>
+<!-- Page wise Languages Data end -->

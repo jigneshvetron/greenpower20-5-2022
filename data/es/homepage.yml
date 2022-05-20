@@ -1,0 +1,254 @@
+############################# Header ############################
+header:
+  enable: true
+  currentlang: "es"
+  urlmain: "/es"
+  urlnews: "/es/news"
+  urlprojects: "/es/#"
+  urlabout: "/es/about"
+  urlresidential: "/es/residential"
+  urlcommercial: "/es/commercial"
+  urlwaterpumps: "/es/water-pumps"
+  urlindustries: "/es/industries"
+  urlpanel: "/es/solar-panel"
+  urlinverter: "/es/solar-inverter"
+  urlwaterpump: "/es/soalr-water-pump"
+  urlheater: "/es/solar-heater"
+  urlmounting: "/es/module-mounting-structure"
+  urllightning: "/es/solar-lightning-products"
+  urlcontact: "/es/contact"
+  urlinquirenow: "/es/inquiry"
+  urltechnologies: "/es/technologies"
+  urlteam: "/es/team"
+  urlprojects: "/du/projects"
+  news: "Noticias"
+  projects: "Proyectos"
+  home: "Casa"
+  about: "Acerca de"
+  solutions: "Soluciones"
+  residential: "Residencial"
+  commercial: "Comercial"
+  waterpumps: "Bombas de agua"
+  industries: "Industrias"
+  products: "Products"
+  panel: "Paneles solares"
+  inverter: "Inversores solares"
+  waterpump: "bomba de agua solar"
+  heater: "Calentador solar"
+  mounting: "Productos de iluminación solar"
+  lightning: "Productos de rayos solares"
+  contact: "Contacto"
+  inquirenow: "Consulta ahora"
+  customerlogin: "Inicio de sesión del cliente"
+  getquote: "Obtener cotización"
+  meettheteam: "Conocer al equipo"
+  langimage: "images/flag/flag-uk.png"
+
+############################# Banner ############################
+banner:
+  enable: true
+  title1: "Energía solar para Baleares y España peninsular"
+  desc1: "Aorem ipsum dolor sit amet consectetur adipisicing anim elit dolore magna aliqua veniam quis nostrud."
+  learnmore: "RESERVA TU ENCUESTA GRATIS "
+  talk: "Hable con nosotros"
+  title2: "Las mejores soluciones de energía renovable para el futuro"
+  desc2: "Aorem ipsum dolor sit amet consectetur adipisicing anim elit dolore magna aliqua veniam quis nostrud."
+  link: "/es/inquiry"
+
+############################# Info ############################
+info:
+  enable: true
+  title1: "100% Financiamiento disponible"
+  title2: "Hasta 25 años de garantía"
+  title3: "Energía limpia para tu hogar o negocio"
+  title4: "Contratos de mantenimiento de bajo costo"
+  title5: "Bajos costos"
+  desc5: "La energía solar cuesta menos de lo que piensas. También disponemos de opciones de financiación al 100% y subvenciones de la UE hasta el 30% de los costes devueltos."
+  title6: "Hasta 25 años de garantía"
+  desc6: "Nuestra marca de paneles solares, Carbon Free, viene con una garantía de 25 años."
+  title7: "Energía verde"
+  desc7: "Producir su propia energía solar reduce su huella de carbono y los combustibles fósiles necesarios para alimentar su hogar o negocio."
+  title8: "Independencia verde"
+  desc8: "Nuestros sistemas normalmente tardan entre 3 y 5 años en pagarse por sí mismos, después de eso, usted tiene una fuente de energía gratuita y puede ser compensado por la energía que no usa."
+  learnmore: "Aprende más"
+
+############################# Who We Are ############################
+whoweare:
+  enable: true
+  title: "Liderando el mundo hacia una energía sostenible, asequible y limpia"
+  desc1: "Green Power suministra a hogares y empresas una gama de soluciones de energía renovable llave en mano, especializándose en la instalación de tecnologías solares en las Islas Baleares y España peninsular. ¡Pregunte hoy para organizar su encuesta gratuita y sin compromiso y descubra su potencial de energía renovable y lo que podría ahorrar hoy!"
+  desc2: ""
+  span: "cómo generamos energía"
+
+############################# Feature ############################
+features:
+  enable: true
+  title1: "Construyendo y manteniendo energía limpia en todo el mundo"
+  desc1: "Características que tenemos que nos mejoran"
+  title2: "Conocer al equipo"
+  urlteam: "/es/team"
+  desc2: "Nuestro equipo está dedicado a ayudarlo a lograr su energía verde.
+y metas financieras. Utilizamos el último software para calcular
+las mejores opciones para alcanzar esos objetivos."
+  title3: "Energy Around World"
+  desc3: "At dolore magna aliqua enim veniam aliquip exa aute irure dolor reprehen quis nostrud exercitation."
+  title4: "Tecnología"
+  desc4: "Ver nuestros proyectos anteriores. De los sistemas residenciales a la escala de servicios públicos
+granjas solares flotantes. Ningún proyecto es demasiado pequeño o demasiado grande."
+  title5: "Stability & Comfort"
+  desc5: "At dolore magna aliqua enim veniam aliquip exa aute irure dolor reprehen quis nostrud exercitation."
+  title6: "Noticias"
+  urlnews: "/es/news"
+  desc6: "Consulte las últimas noticias sobre energías renovables."
+  title7: "Renewable Resources"
+  desc7: "At dolore magna aliqua enim veniam aliquip exa aute irure dolor reprehen quis nostrud exercitation."
+
+############################# Service ############################
+service:
+  enable: true
+  readmore: "Lee mas"
+  title1: "Residencial"
+  title2: "Comercial"
+  title3: "Bombas de agua"
+  title4: "Industrias"
+
+############################# Advantage ############################
+advantage:
+  enable: true
+  span: "Ayúdanos a la revolución de las energías limpias"
+  title1: "¿Por qué elegir energía verde?"
+  description: "Nos especializamos en el diseño, suministro, instalación y mantenimiento de paneles solares y otras tecnologías de energía verde."
+  title2: "12+ AÑOS DE EXPERIENCIA"
+  title3: "Atmósfera más limpia"
+  title4: "Reduciendo su Huella de Carbono"
+  title5: "El revolucionario panel solar interno de Green Power"
+  title6: "Solar: simplificada"
+  description6: "Desde la inspección inicial hasta la instalación y el mantenimiento, nuestro equipo evita la jerga y proporciona la información que necesita en un idioma que comprende."
+  title7: "Proyectos sin cortador de galletas"
+  description7: "Sus necesidades solares son diferentes a las de su vecino. Nuestra encuesta gratuita determinará sus requisitos exactos: comerciales o residenciales.
+
+"
+  title8: "100% honestidad"
+  description8: "Le mostramos exactamente cómo la instalación de soluciones de energía renovable afectará sus facturas a través de simulaciones y comparaciones."
+
+############################# Consultation ############################
+consultation:
+  enable: true
+  title: "Obtenga una consulta gratuita, llámenos"
+  contact: "Contacta con nosotras"
+  contacturl: "/es/contact"
+
+############################# Projects ############################
+projects:
+  enable: true
+  span: ""
+  title1: "Nuestros últimos proyectos"
+  title2: "Turbina eólica"
+  a1: "Proyecto de energía limpia"
+  title3: "Turbina eólica"
+  a2: "Proyecto de energía limpia"
+  title4: "Turbina eólica"
+  a3: "Proyecto de energía limpia"
+  title5: "Turbina eólica"
+  a4: "Proyecto de energía limpia"
+  title6: "Turbina eólica"
+  a5: "Proyecto de energía limpia"
+
+############################# Expertise ############################
+expertise:
+  enable: true
+  title1: "Nosotras traemos el sol a la tierra"
+  desc1: "Green Power es un pionero en el diseño, instalación y servicio de energía renovable de bombas y controladores de agua solares, inversores en red y paneles solares en la azotea."
+  title2: "Encuentra aquí Sistema solar industrial"
+  desc2: "Como una de las compañías líderes en energía solar, trabajamos en estrecha colaboración con los propietarios de viviendas y negocios, y realmente disfrutamos ayudándolos a maximizar su eficiencia energética y disfrutar de una vida de ahorros."
+  residential: "Residencial"
+  commercial: "Comercial"
+  waterpumps: "Bombas de agua"
+  industries: "Industrias"
+  title3: "Misión y visión"
+  desc3: "“Creemos en la colaboración adecuada para salvar la tierra: para su gente”"
+
+############################# Testimonial ############################
+testimonial:
+  enable: true
+  title1: "Obtenga los hechos correctos y los testimonios de los clientes"
+  desc1: "Lo que dicen nuestras clientes satisfechas en todo el mundo"
+  title2: "“Muchos beneficios para el medio ambiente”"
+  desc2: "Las plantas solares están inspeccionadas y bien mantenidas. Observamos todos los detalles minuciosamente junto con la visita a todas las áreas principales y el estudio de los paneles."
+  name1: "Mr. Abhay Agarwal"
+  name2: "KPMG"
+  title3: "“Muchos beneficios para el medio ambiente”"
+  desc3: "Excelente trabajo de los equipos. Rendimiento de alto rendimiento con obras de construcción de alta calidad. Impresionado con paneles solares, alta velocidad en paneles solares."
+  name3: "Mr. Sanjay Malhotara"
+  name4: ""
+  title4: "“Muchos beneficios para el medio ambiente”"
+  desc4: "Visité las plantas solares y varias e impresionado con la velocidad a la que las plantas y la configuración."
+  name5: "Mr Anubhav"
+  name6: ""
+
+############################# Blog ############################
+blog:
+  enable: true
+  title: "Noticias del mundo de la energía"
+  atitle1: "Agenda medioambiental para 2020 y más allá"
+  atitle2: "Agenda medioambiental para 2020 y más allá"
+  atitle3: "Agenda medioambiental para 2020 y más allá"
+  atitle4: "Agenda medioambiental para 2020 y más allá"
+  atitle5: "Agenda medioambiental para 2020 y más allá"
+
+############################# Sub Contact ############################
+subcontact:
+  enable: true
+  banner1: "images/banner/banner1.jpg"
+  title: "Obtenga una consulta gratuita, llámenos"
+  desc: "Enhance The Energy Production Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  inquirynow: "CONSULTA AHORA"
+  urlinquiry: "/es/inquiry"
+
+############################# Footer ############################
+footer:
+  enable: true
+  desc: "GreenPower es una empresa líder en instalación de energías renovables con sede en España y especializada en la instalación de tecnologías en Baleares. ¡Llámenos ahora sin compromiso y para una encuesta gratuita para descubrir su potencial de energía renovable hoy!"
+  explore: "Explora nosotros"
+  news: "Noticias"
+  projects: "Proyectos"
+  contact: "Contacto"
+  meettheteam: "Conocer al equipo"
+  home: "Casa"
+  about: "Acerca de"
+  solutions: "Soluciones"
+  residential: "Residencial"
+  commercial: "Comercial"
+  waterpumps: "Bombas de agua"
+  industries: "Industrias"
+  products: "Productos"
+  panel: "libre de carbono"
+  inverter: "Inversores solares"
+  waterpump: "bomba de agua solar"
+  heater: "Calentador solar"
+  mounting: "Productos de iluminación solar"
+  lightning: "Productos de rayos solares"
+  address: "Habla a"
+  address2: "Go Green Power 24 S.L
+Avenida Isidor Macabich 1
+07816, San Rafael, Ibiza, Balearic Islands"
+  mobile: "Móvil"
+  email: "Correo electrónico"
+  copyright: "Derechos de autor"
+  greenpower: "Green Power"
+  rights: "Reservados todos los derechos"
+  designby: "Diseñado y desarrollado por"
+  urlnews: "/es/news"
+  urlprojects: "/es/#"
+  urlabout: "/es/about"
+  urlresidential: "/es/residential"
+  urlcommercial: "/es/commercial"
+  urlwaterpumps: "/es/water-pumps"
+  urlindustries: "/es/industries"
+  urlpanel: "/es/solar-panel"
+  urlinverter: "/es/solar-inverter"
+  urlwaterpump: "/es/soalr-water-pump"
+  urlheater: "/es/solar-heater"
+  urlmounting: "/es/module-mounting-structure"
+  urllightning: "/es/solar-lightning-products"
+  urlcontact: "/es/contact"

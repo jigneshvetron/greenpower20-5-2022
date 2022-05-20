@@ -1,0 +1,64 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{- if $data.homepage.service.enable }}
+        {{- with $data.homepage.service }}
+            <!-- Start of site service section -->
+                <section id="service" class="service-section">
+                    <div class="service-content row g-0">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="service-pic-text position-relative">
+                        <div class="service-pic">
+                            <div class="ratio">
+                            <img src="{{ site.Params.images.residential | absURL }}" alt="">
+                            </div>
+                        </div>
+                        <div class="service-text text-center text-uppercase">
+                            <h3>{{ .title1 }}</h3>
+                            <!-- <a class="link-arrow" href="#">{{ .readmore }} <i class="arrow"></i></a> -->
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="service-pic-text position-relative">
+                        <div class="service-pic">
+                            <div class="ratio">
+                            <img src="{{ site.Params.images.commercial | absURL }}" alt="">
+                            </div>
+                        </div>
+                        <div class="service-text text-center text-uppercase">
+                            <h3>{{ .title2 }}</h3>
+                            <!-- <a class="link-arrow" href="#">{{ .readmore }} <i class="arrow"></i></a> -->
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="service-pic-text position-relative">
+                        <div class="service-pic">
+                            <div class="ratio">
+                            <img src="{{ site.Params.images.waterpumps | absURL }}" alt="">
+                            </div>
+                        </div>
+                        <div class="service-text text-center text-uppercase">
+                            <h3>{{ .title3 }}</h3>
+                            <!-- <a class="link-arrow" href="#">{{ .readmore }} <i class="arrow"></i></a> -->
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="service-pic-text position-relative">
+                        <div class="service-pic">
+                            <div class="ratio">
+                            <img src="{{ site.Params.images.industries | absURL }}" alt="">
+                            </div>
+                        </div>
+                        <div class="service-text text-center text-uppercase">
+                            <h3>{{ .title4 }}</h3>
+                            <!-- <a class="link-arrow" href="#">{{ .readmore }} <i class="arrow"></i></a> -->
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            <!-- End of site service section -->
+        {{- end }}
+    {{- end }}

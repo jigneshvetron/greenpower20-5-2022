@@ -1,0 +1,85 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} {{- if
+$data.homepage.advantage.enable }} {{- with $data.homepage.advantage }}
+<!-- Start of site advantage section -->
+<section class="sec-gap advantage-section">
+  <div class="container">
+    <div class="sec-head sec-title title-middle text-center mx6 m-auto">
+      <!-- <span class="title-tag">{{ .span }}</span> -->
+      <h2>{{ .title1 }}</h2>
+      <p>{{ .description}}<a href="/solar-panel">Carbon Free</a></p>
+    </div>
+    <div class="row g-2 g-lg-4">
+      <div class="col-12 col-sm-4 text-center">
+        <div class="box" style="padding: 2rem">
+          <div class="step-text">
+            <h3>{{ .title6 }}</h3>
+            <p>{{ .description6}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 text-center">
+        <div class="box" style="padding: 2rem">
+          <div class="step-text">
+            <h3>{{ .title7 }}</h3>
+            <p>{{ .description7}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 text-center">
+        <div class="box" style="padding: 2rem">
+          <div class="step-text">
+            <h3>{{ .title8 }}</h3>
+            <p>{{ .description8}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-body">
+      <div class="row g-2 g-lg-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="advantage-img-text">
+            <div class="advantage-img">
+              <img src="{{ site.Params.images.avd1 | absURL }}" alt="" />
+            </div>
+            <div class="advantage-text text-center text-uppercase headline">
+              <h3>{{ .title2 }}</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="advantage-img-text bg-primary">
+            <div class="advantage-img">
+              <img src="{{ site.Params.images.avd2 | absURL }}" alt="" />
+            </div>
+            <div class="advantage-text text-center text-uppercase headline">
+              <h3>{{ .title3 }}</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="advantage-img-text bg-secondary">
+            <div class="advantage-text text-center text-uppercase headline">
+              <h3>{{ .title4 }}</h3>
+            </div>
+
+            <div class="advantage-img">
+              <img src="{{ site.Params.images.avd3 | absURL }}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="advantage-img-text">
+            <div class="advantage-img">
+              <img src="{{ site.Params.images.avd4 | absURL }}" alt="" />
+            </div>
+            <div class="advantage-text text-center text-uppercase headline">
+              <h3>{{ .title5 }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of site advantage section -->
+{{- end }} {{- end }}

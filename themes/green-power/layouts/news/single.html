@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+    <!-- Start of Slider section -->
+    {{ with .Params.slider }}
+        <section class="inner-banner">
+            <div class="slider-child view1">
+                <div class="slider-img-bg img-zooming" data-background="{{ .Newsbanner | absURL }}"></div>
+                <div class="background_overlay"></div>
+                <div class="container">
+                    <div class="slider-content-box sec-title">
+                        <h1 class="p-0 m-0">{{ .Title }}</h1>
+                        <p class="mb-3">{{ .Desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+    <!-- End of Slider section -->
+    <input type="hidden" value="{{ .Site.BaseURL }}" id="base_url" />
+    {{ with .Params.block }}
+        <section class="sec-gap bg-light">
+            <div class="container">
+                <div class="sec-head text-center">
+                    <div class="sec-head sec-title title-middle title-border text-center mx10 m-auto">
+                        <h2 class="h1 title">{{ .title }}</h2>
+                        <h5>{{ .desc }}</h5>
+                    </div>
+                </div>
+                <div class="sec-body">
+                    <div class="ratio ratio-16x9 mb-4">
+                        <img src="{{ .dummy5 | absURL }}" class="img-fluid" />
+                    </div>
+                    <div class="mx10 m-auto">
+                        <p>{{ .desc2 }}</p>
+                    </div>
+                </div>
+                <div class="mx10 m-auto mt-3 border-top sec-gap-sm">
+                    <div class="row g-3 align-items-center justify-content-center">
+                        <div class="col-12 col-sm-auto"><span class="h5">{{ .content }}:</span></div>
+                        <div class="col-12 col-sm-auto">
+                            <ul class="social view1 lg">
+                                <li><a class="fbUrl" data-url="{{ .urlshare }}"><i class="bx bxl-facebook"></i></a></li>
+                                <li><a class="twUrl" data-url="{{ .urlshare }}"><i class="bx bxl-twitter"></i></a></li>
+                                <li><a class="lnUrl" data-url="{{ .urlshare }}"><i class="bx bxl-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+
+    {{- partial "sub-contact.html" . }}
+    
+{{ end }}

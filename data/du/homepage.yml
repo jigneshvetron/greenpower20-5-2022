@@ -1,0 +1,252 @@
+############################# Header ############################
+header:
+  enable: true
+  currentlang: "du"
+  urlmain: "/du"
+  urlnews: "/du/news"
+  urlprojects: "/du/#"
+  urlabout: "/du/about"
+  urlresidential: "/du/residential"
+  urlcommercial: "/du/commercial"
+  urlwaterpumps: "/du/water-pumps"
+  urlindustries: "/du/industries"
+  urlpanel: "/du/solar-panel"
+  urlinverter: "/du/solar-inverter"
+  urlwaterpump: "/du/soalr-water-pump"
+  urlheater: "/du/solar-heater"
+  urlmounting: "/du/module-mounting-structure"
+  urllightning: "/du/solar-lightning-products"
+  urlcontact: "/du/contact"
+  urlinquirenow: "/du/inquiry"
+  urltechnologies: "/du/technologies"
+  urlteam: "/du/team"
+  urlprojects: "/du/projects"
+  news: "Nieuws"
+  projects: "Projecten"
+  home: "Huis"
+  about: "Over"
+  solutions: "Oplossingen"
+  residential: "residentieel"
+  commercial: "Reclame"
+  waterpumps: "Waterpompen"
+  industries: "Industrieën"
+  products: "Producten"
+  panel: "Zonnepanelen"
+  inverter: "Zonne-omvormers"
+  waterpump: "Zonne-waterpomp"
+  heater: "Zonneboiler"
+  mounting: "Module montagestructuur"
+  lightning: "Producten voor zonne-verlichting"
+  contact: "Contact"
+  inquirenow: "Vraag nu aan"
+  customerlogin: "Klant login"
+  getquote: "Offerte aanvragen"
+  meettheteam: "Ontmoet het team"
+  langimage: "images/flag/flag-uk.png"
+
+############################# Banner ############################
+banner:
+  enable: true
+  title1: "Zonne-energie voor de Balearen en het vasteland van Spanje"
+  desc1: "Aorem ipsum dolor sit amet consectetur adipisicing anim elit dolore magna aliqua veniam quis nostrud."
+  learnmore: "BOEK UW GRATIS ENQUTE"
+  talk: "Praat met ons"
+  title2: "Beste oplossingen voor hernieuwbare energie voor de toekomst"
+  desc2: "Aorem ipsum dolor sit amet consectetur adipisicing anim elit dolore magna aliqua veniam quis nostrud."
+  link: "/du/inquiry"
+
+############################# Info ############################
+info:
+  enable: true
+  title1: "100% Financiering beschikbaar"
+  title2: "Tot 25 jaar garantie"
+  title3: "Schone stroom voor uw huis of bedrijf"
+  title4: "Voordelige onderhoudscontracten"
+  title5: "Lage kosten"
+  desc5: "Zonne-energie kost minder dan u denkt. We hebben ook 100% financieringsmogelijkheden en EU-subsidies die tot 30% van de kosten terugkrijgen."
+  title6: "Tot 25 jaar garantie"
+  desc6: "Ons merk zonnepanelen, Carbon Free, wordt geleverd met 25 jaar garantie."
+  title7: "Groene energie"
+  desc7: "Door uw eigen zonne-energie te produceren, verkleint u uw ecologische voetafdruk en de fossiele brandstoffen die nodig zijn om uw huis of bedrijf van stroom te voorzien."
+  title8: "Groene onafhankelijkheid"
+  desc8: "Onze systemen hebben normaal gesproken 3/5 jaar nodig om zichzelf terug te betalen, daarna heb je een gratis energiebron en kun je gecompenseerd worden voor de energie die je niet gebruikt."
+  learnmore: "Leer meer"
+
+############################# Who We Are ############################
+whoweare:
+  enable: true
+  title: "De wereld leiden op weg naar duurzame, betaalbare en schone energie"
+  desc1: "Green Power voorziet huizen en bedrijven van een reeks kant-en-klare oplossingen voor hernieuwbare energie, gespecialiseerd in de installatie van zonnetechnologieën op de Balearen en op het vasteland van Spanje. Vraag vandaag nog uw gratis en vrijblijvende enquête aan en ontdek uw potentieel voor hernieuwbare energie en wat u vandaag nog zou kunnen besparen!"
+  desc2: ""
+  span: "hoe we energie opwekken"
+
+############################# Feature ############################
+features:
+  enable: true
+  title1: "Over de hele wereld schone energie bouwen en onderhouden"
+  desc1: "Functies die we hebben die ons verbeteren"
+  title2: "Ontmoet het team"
+  urlteam: "/du/team"
+  desc2: "Ons team is toegewijd om u te helpen uw groene energie te realiseren
+en financiële doelen. We gebruiken de nieuwste software om te berekenen
+de beste opties om die doelen te bereiken."
+  title3: "Energy Around World"
+  desc3: "At dolore magna aliqua enim veniam aliquip exa aute irure dolor reprehen quis nostrud exercitation."
+  title4: "Technologie"
+  desc4: "Bekijk onze eerdere projecten. Van residentiële systemen tot utiliteitsschaal
+drijvende zonneparken. Geen project is te klein of te groot."
+  title5: "Stability & Comfort"
+  desc5: "At dolore magna aliqua enim veniam aliquip exa aute irure dolor reprehen quis nostrud exercitation."
+  title6: "Nieuws"
+  urlnews: "/du/news"
+  desc6: "Bekijk het laatste nieuws over duurzame energie."
+  title7: "Renewable Resources"
+  desc7: "At dolore magna aliqua enim veniam aliquip exa aute irure dolor reprehen quis nostrud exercitation."
+
+############################# Service ############################
+service:
+  enable: true
+  readmore: "Lees verder"
+  title1: "residentieel"
+  title2: "Reclame"
+  title3: "Waterpompen"
+  title4: "Industrieën"
+
+############################# Advantage ############################
+advantage:
+  enable: true
+  span: "Help ons voor de schone energierevolutie"
+  title1: "Waarom kiezen voor Groene Stroom?"
+  description: "Wij zijn gespecialiseerd in het ontwerp, de levering, de installatie en het onderhoud van zonnepanelen en andere groene energietechnologieën."
+  title2: "12+ JAAR ERVARING"
+  title3: "Schonere atmosfeer"
+  title4: "Uw CO2-voetafdruk verkleinen"
+  title5: "Het revolutionaire eigen zonnepaneel van Green Power"
+  title6: "Zonne-energie: vereenvoudigd"
+  description6: "Van eerste onderzoek tot installatie en onderhoud, ons team vermijdt het jargon en geeft de informatie die u nodig heeft in een taal die u begrijpt."
+  title7: "Geen Cookie Cutter-projecten"
+  description7: "Uw zonne-energiebehoefte is anders dan die van uw buurman. Onze gratis enquête zal uw exacte vereisten bepalen - commercieel of residentieel.
+"
+  title8: "100% eerlijkheid"
+  description8: "Door middel van simulaties en vergelijkingen laten we u precies zien hoe het installeren van duurzame energieoplossingen uw rekeningen zal beïnvloeden."
+############################# Consultation ############################
+consultation:
+  enable: true
+  title: "Krijg een gratis consult, bel ons"
+  contact: "Neem contact op"
+  contacturl: "/du/contact"
+
+############################# Projects ############################
+projects:
+  enable: true
+  span: ""
+  title1: "Onze nieuwste projecten"
+  title2: "Windturbine"
+  a1: "Project voor schone energie"
+  title3: "Windturbine"
+  a2: "Project voor schone energie"
+  title4: "Windturbine"
+  a3: "Project voor schone energie"
+  title5: "Windturbine"
+  a4: "Project voor schone energie"
+  title6: "Windturbine"
+  a5: "Project voor schone energie"
+
+############################# Expertise ############################
+expertise:
+  enable: true
+  title1: "Wij brengen de zon naar de aarde"
+  desc1: "Green Power is een pionier in het ontwerpen, installeren en onderhouden van zonne-waterpompen en -controllers, on-grid omvormers en zonnepanelen op het dak."
+  title2: "Vind hier Industrieel zonnestelsel"
+  desc2: "Als een van de toonaangevende bedrijven op het gebied van zonne-energie werken we nauw samen met huiseigenaren en bedrijfseigenaren en vinden we het erg leuk om hen te helpen hun energie-efficiëntie te maximaliseren en een leven lang te besparen."
+  residential: "residentieel"
+  commercial: "Reclame"
+  waterpumps: "Waterpompen"
+  industries: "Industrieën"
+  title3: "Missie en visie"
+  desc3: "“Wij geloven in de juiste samenwerking om de aarde te redden - For its People”"
+
+############################# Testimonial ############################
+testimonial:
+  enable: true
+  title1: "Ontvang de juiste feiten en getuigenissen van klanten"
+  desc1: "Wat onze tevreden klanten over de hele wereld zeggen"
+  title2: "“Veel voordelen voor het milieu”"
+  desc2: "Zonnecentrales worden gekeurd en goed onderhouden. We hebben alle details minutieus waargenomen, samen met een bezoek aan alle belangrijke gebieden en studie van panelen."
+  name1: "Mr. Abhay Agarwal"
+  name2: "KPMG"
+  title3: "“Veel voordelen voor het milieu”"
+  desc3: "Uitstekend werk van de teams. Hoge prestatieopbrengst met hoogwaardige constructiewerken. Onder de indruk van zonnepanelen, hoge snelheid in zonnepanelen."
+  name3: "Mr. Sanjay Malhotara"
+  name4: ""
+  title4: "“Veel voordelen voor het milieu”"
+  desc4: "Bezocht de zonnecentrales en diverse en onder de indruk van de snelheid waarmee de planten en opstelling."
+  name5: "Mr Anubhav"
+  name6: ""
+
+############################# Blog ############################
+blog:
+  enable: true
+  title: "Nieuws uit de energiewereld"
+  atitle1: "Milieuagenda voor 2020 en verder"
+  atitle2: "Milieuagenda voor 2020 en verder"
+  atitle3: "Milieuagenda voor 2020 en verder"
+  atitle4: "Milieuagenda voor 2020 en verder"
+  atitle5: "Milieuagenda voor 2020 en verder"
+
+############################# Sub Contact ############################
+subcontact:
+  enable: true
+  banner1: "images/banner/banner1.jpg"
+  title: "Krijg een gratis consult, bel ons"
+  desc: "Enhance The Energy Production Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  inquirynow: "INFORMEER NU"
+  urlinquiry: "./du/inquiry"
+
+############################# Footer ############################
+footer:
+  enable: true
+  desc: "GreenPower is een toonaangevend installatiebedrijf voor hernieuwbare energie, gevestigd in Spanje en gespecialiseerd in de installatie van technologieën op de Balearen. Bel ons nu voor een vrijblijvende en gratis enquête om uw hernieuwbare energiepotentieel vandaag nog te ontdekken!"
+  explore: "Ontdek ons"
+  news: "Nieuws"
+  projects: "Projecten"
+  contact: "Contact"
+  meettheteam: "Ontmoet het team"
+  home: "Huis"
+  about: "Over"
+  solutions: "Oplossingen"
+  residential: "residentieel"
+  commercial: "Reclame"
+  waterpumps: "Waterpompen"
+  industries: "Industrieën"
+  products: "Producten"
+  panel: "Koolstofvrij"
+  inverter: "Zonne-omvormers"
+  waterpump: "Zonne-waterpomp"
+  heater: "Zonneboiler"
+  mounting: "Module montagestructuur"
+  lightning: "Producten voor zonne-verlichting"
+  address: "Adres"
+  address2: "Go Green Power 24 S.L.
+Isidor Macabich Avenue 1
+07816, San Rafael, Ibiza, Balearen"
+  mobile: "Mobiel"
+  email: "Email"
+  copyright: "auteursrechten"
+  greenpower: "Green Power"
+  rights: "Alle rechten voorbehouden"
+  designby: "Ontworpen en ontwikkeld door"
+  urlnews: "/du/news"
+  urlprojects: "/du/#"
+  urlabout: "/du/about"
+  urlresidential: "/du/residential"
+  urlcommercial: "/du/commercial"
+  urlwaterpumps: "/du/water-pumps"
+  urlindustries: "/du/industries"
+  urlpanel: "/du/solar-panel"
+  urlinverter: "/du/solar-inverter"
+  urlwaterpump: "/du/soalr-water-pump"
+  urlheater: "/du/solar-heater"
+  urlmounting: "/du/module-mounting-structure"
+  urllightning: "/du/solar-lightning-products"
+  urlcontact: "/du/contact"

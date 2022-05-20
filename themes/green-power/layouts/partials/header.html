@@ -1,0 +1,128 @@
+
+{{ if .IsTranslated }}
+{{ $siteLanguages := .Site.Languages}}
+{{ $pageLang := .Page.Lang}}
+{{ range .Page.AllTranslations }}
+{{ $translation := .}}
+{{ range $siteLanguages }}
+{{ if eq $translation.Lang .Lang }}
+{{ $selected := false }}
+{{ if eq $pageLang .Lang}}
+<input type="hidden" value="{{ . }}" id="current-lang" />
+<input type="hidden" value="{{ $translation.Permalink }}" id="url-{{ . }}" />
+{{ else }}
+<input type="hidden" value="{{ $translation.Permalink }}" id="url-{{ . }}" />
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+<div class="fixed-header-fill"></div>
+<div class="up">
+  <a href="javascript:void(0)" class="scrollup text-center"><i class="bx bx-up-arrow-alt"></i></a>
+</div>
+{{ $data := index .Site.Data .Site.Language.Lang }}
+  {{- if $data.homepage.header.enable }}
+    {{- with $data.homepage.header }}
+      <!-- Start of header section -->
+        <header id="header">
+          <div class="header-top bg-primary hide-md">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-auto">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-auto">
+                      <div class="upper-menu header_top_contact">
+                        <a href="tel:34651720792"><i class="bx bx-phone-call"></i> +34 651 720 792</a>
+                        <a href="mailto:info@greenpwr.eu"><i class="bx bx-envelope-open"></i> info@greenpwr.eu</a>
+                      </div>
+                    </div>
+                    <div class="col-auto hide-lg">
+                      <ul class="social view1">
+                        <li><a href="https://www.instagram.com/greenpowereu/"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="https://www.facebook.com/greenpowereu"><i class='bx bxl-facebook'></i></a></li>
+                        <li><a href="https://wa.me/+447818565879"><i class='bx bxl-whatsapp'></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-auto">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-auto">
+                      <div class="upper-menu">
+                        <a href="{{ .urlnews }}">{{ .news }}</a>
+                        <!-- <a href="javascript::void(0);">{{ .projects }}</a> -->
+                        <!-- <a href="javascript::void(0);">{{ .customerlogin }}</a> -->
+                      </div>
+                    </div>
+    {{- end }}
+  {{- end }}
+
+  {{- partial "language.html" . }}
+
+  {{- if $data.homepage.header.enable }}
+    {{- with $data.homepage.header }}
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-section">
+            <div class="container main-menu">
+              <div class="align-items-center justify-content-between row header-wrapper">
+                <div id="logo" class="logo col-auto order-lg-1"> <a href="{{ site.BaseURL | relLangURL }}"><img src="{{ site.Params.logo | absURL }}" alt="Green PWR Logo" /></a> </div>
+                <div class="d-flex align-self-center col-auto order-lg-3 hide-md">
+                  <div class="btn-style1">
+                    <a class="btn-arrow btn" href="{{ .urlinquirenow }}">{{ .getquote }} <i class="arrow"></i></a>
+                  </div>
+                </div>
+                <nav id="nav-menu-container" class="nav-menu-container col-lg col-md-12 order-lg-2">
+    {{- end }}
+  {{- end }}
+
+  {{- partial "language2.html" . }}
+
+  {{- if $data.homepage.header.enable }}
+    {{- with $data.homepage.header }}
+
+                     
+                  <ul class="nav-menu clearfix">
+                    <li class='{{ $t := .Site.GetPage .urlresidential }}
+                    {{ $t }} {{ $dir := path.Split .Permalink }}{{ if in $dir "/" }}active{{ else }}{{ $dir }}{{ end }}'><a href="{{ .urlmain }}">{{ .home }}</a></li>
+                    <!-- <li class=""><a href="{{ .urlabout }}">{{ .about }}</a></li> -->
+                    <li class='{{ $dir := path.Split .Permalink }}{{ if eq $dir "residential" }}active{{ else }}{{ $dir }}{{ end }}'><a href="{{ .urlresidential }}">{{ .residential }}</a></li>
+                    <li class=""><a href="{{ .urlcommercial | absURL }}">{{ .commercial }}</a></li>
+                    <!-- <li class="menu-has-children "><a href="javascript:void(0)">{{ .solutions }}</a>
+                      <ul>
+                        <li class=""><a href="{{ .urlresidential }}">{{ .residential }}</a></li>
+                        <li class=""><a href="{{ .urlcommercial }}">{{ .commercial }}</a></li>
+                        <li class=""><a href="{{ .urlwaterpumps }}">{{ .waterpumps }}</a></li>
+                        <li class=""><a href="{{ .urlindustries }}">{{ .industries }}</a></li>
+                      </ul>
+                    </li> -->
+                    <!-- <li class=""><a href="javascript:void(0)">{{ .products }}</a>
+                      <ul>
+                        <li class=""><a href="{{ .urlpanel }}">{{ .panel }}</a></li>
+                        <li class=""><a href="{{ .urlinverter }}">{{ .inverter }}</a></li>
+                        <li class=""><a href="{{ .urlwaterpump }}">{{ .waterpump }}</a></li>
+                        <li class=""><a href="{{ .urlheater }}">{{ .heater }}</a></li>
+                        <li class=""><a href="{{ .urlmounting }}">{{ .mounting }}</a></li>
+                        <li class=""><a href="{{ .urllightning }}">{{ .lightning }}</a></li>
+                      </ul>
+                    </li> -->
+                    
+                    <li class=""><a href="{{ .urlteam | absURL }}">{{ .meettheteam }}</a></li>
+                    <li class="m-nav"><a href="{{ .urlprojects | absURL }}">{{ .projects }}</a></li>
+                    <li class="m-nav"><a href="{{ .urlnews | absURL }}">{{ .news }}</a></li>
+                    <li><a href="{{ .urlcontact | absURL }}">{{ .contact }}</a></li>
+                  </ul>
+                  <div class="m-nav m-foot"><a href="{{ .urlinquirenow | absURL }}" class="btn btn-block btn-primary inquiry_text">{{ .getquote }}</a></div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      <!-- End of header section -->
+    {{- end }}
+  {{- end }}

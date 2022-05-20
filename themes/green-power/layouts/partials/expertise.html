@@ -1,0 +1,90 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{- if $data.homepage.expertise.enable }}
+        {{- with $data.homepage.expertise }}
+            <!-- Start of site expertise section -->
+            <section class="sec-gap sec-expertise">
+                <div class="container">
+                  <div class="expertise-content">
+                    <div class="row gx-0 gx-md-5">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="expertise-text">
+                          <div class="sec-head sec-title">
+                            <h2>{{ .title1 }}</h2>
+                            <p>{{ .desc1 }}</p>
+                            <h5 class="fw7 text-white">{{ .title2 }}</h5>
+                            <p>{{ .desc2 }}</p>
+                          </div>
+                          <div class="sec-body expertise-skill-progress">
+                            <div class="single_experties">
+                              <div class="progress_text">
+                                <div class="skill-title float-left text-capitalize">{{ .residential }}</div>
+                                <div class="skill-percent float-right">98%</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar wow forwards animated" style="max-width: 90%;" role="progressbar" data-wow-duration="1.5s" data-wow-delay=".5s" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="single_experties">
+                              <div class="progress_text">
+                                <div class="skill-title float-left text-capitalize">{{ .commercial }}</div>
+                                <div class="skill-percent float-right">95%</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar wow forwards animated" style="max-width: 95%;" role="progressbar" data-wow-duration="1.5s" data-wow-delay=".5s" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="single_experties">
+                              <div class="progress_text">
+                                <div class="skill-title float-left text-capitalize">{{ .waterpumps }}</div>
+                                <div class="skill-percent float-right">90%</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar wow forwards animated" style="max-width: 90%;" role="progressbar" data-wow-duration="1.5s" data-wow-delay=".5s" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="single_experties">
+                              <div class="progress_text">
+                                <div class="skill-title float-left text-capitalize">{{ .industries }}</div>
+                                <div class="skill-percent float-right">99%</div>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar wow forwards animated" style="max-width: 99%;" role="progressbar" data-wow-duration="1.5s" data-wow-delay=".5s" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ex-carousel hide-lg">
+                  <div class="swiper-container swiper-img">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="{{ site.Params.images.ex3 | absURL }}" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="{{ site.Params.images.ex2 | absURL }}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="sec-gap sec-visible pt-0">
+            <div class="mission-area">
+                <div class="mission-text">
+                <div class="sec-title">
+                    <span class="title-tag"><img src="{{ site.Params.images.icon5 | absURL }}" alt="">{{ .title3 }}</span>
+                    <h2>{{ .desc3 }}</h2>
+                </div>
+                </div>
+            </div>
+            </section>
+            <!-- End of site expertise section -->
+        {{- end }}
+    {{- end }}

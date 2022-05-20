@@ -1,0 +1,72 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{- if $data.homepage.testimonial.enable }}
+        {{- with $data.homepage.testimonial }}
+            <!-- Start of site testimonial section -->
+                <section class="sec-gap sec-testimonial pt-0">
+                    <div class="container">
+                    <div class="sec-head sec-title title-middle text-center mx6 m-auto">
+                        <span class="title-tag">{{ .title1 }}</span>
+                        <h2>{{ .desc1 }}</h2>
+                    </div>
+                    <div class="sec-body">
+                        <div class="row gx-0 justify-content-end img-left">
+                        <img src="{{ site.Params.images.tbg | absURL }}" alt="" class="img">
+                        <div class="col-lg-7">
+                            <div class="testimonial-text-slide img-left-box">
+                            <div class="swiper-container swiper-testimonial">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide-text">
+                                    <div class="q-icon">
+                                        <i class='bx bxs-quote-alt-left'></i>
+                                    </div>
+                                    <h3>{{ .title2 }}</h3>
+                                    <p>{{ .desc2 }}</p>
+                                    <div class="testimonial-rate">
+                                        <div class="fw6 testimonial-name">{{ .name1 }}</div>
+                                        <span>{{ .name2 }}</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide-text">
+                                    <div class="q-icon">
+                                        <i class='bx bxs-quote-alt-left'></i>
+                                    </div>
+                                    <h3>{{ .title3 }}</h3>
+                                    <p>{{ .desc3 }}</p>
+                                    <div class="testimonial-rate">
+                                        <div class="fw6 testimonial-name">{{ .name3 }}</div>
+                                        <span>{{ .name4 }}</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide-text">
+                                    <div class="q-icon">
+                                        <i class='bx bxs-quote-alt-left'></i>
+                                    </div>
+                                    <h3>{{ .title4 }}</h3>
+                                    <p>{{ .desc4 }}</p>
+                                    <div class="testimonial-rate">
+                                        <div class="fw6 testimonial-name">{{ .name5 }}</div>
+                                        <span>{{ .name6 }}</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="swiper-control-1">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            <!-- End of site testimonial section -->
+        {{- end }}
+    {{- end }}

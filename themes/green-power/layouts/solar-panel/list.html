@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+    <!-- Start of Slider section -->
+    {{ with .Params.slider }}
+        <section class="inner-banner">
+            <div class="slider-child view1">
+                <div class="slider-img-bg img-zooming" data-background="{{ .Newsbanner | absURL }}"></div>
+                <div class="background_overlay"></div>
+                <div class="container">
+                    <div class="slider-content-box sec-title">
+                        <h1 class="p-0 m-0">{{ .Title }}</h1>
+                        <p class="mb-3">{{ .Desc }}</p>
+                        <a class="btn btn-outline-white-p text-white btn-arrow" href="tel:34651720792">{{ .talk }}  +34 651 720 792 <i class="arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+    <!-- End of Slider section -->
+
+    {{ with .Params.block }}
+        <section class="sec-gap">
+            <div class="container">
+                <div class="sec-head">
+                    <h2>{{ .title }}</h2>
+                </div>
+                <div class="sec-body">
+                    <p>{{ .desc1 }}</p>
+                    <p>{{ .desc2 }}</p>
+                    <p>{{ .desc3 }}</p>
+                    <p>{{ .desc4 }}</p>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+
+    {{ with .Params.block2 }}
+        <section class="sec-gap d-bg bg1">
+            <img class="bg-item" src="{{ .dshape | absURL }}" />
+            <div class="bg-item overlay"></div>
+            <div class="container">
+                <div class="row g-2 g-lg-4">
+                    <div class="col-md-6">
+                        <div class="box view1">
+                            <div class="row g-2 g-lg-4 align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid" src="{{ .panelimg1 | absURL }}" />
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="title fw7">{{ .title1 }}</h4>
+                                    <ul class="ul-list check">
+                                        <li>{{ .list1 }}</li>
+                                        <li>{{ .list2 }}</li>
+                                        <li>{{ .list3 }}</li>
+                                        <li>{{ .list4 }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box view1">
+                            <div class="row g-2 g-lg-4 align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid" src="{{ .panelimg2 | absURL }}" />
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="title fw7">{{ .title2 }}</h4>
+                                    <ul class="ul-list check">
+                                        <li>{{ .list5 }}</li>
+                                        <li>{{ .list6 }}</li>
+                                        <li>{{ .list7 }}</li>
+                                        <li>{{ .list8 }}</li>
+                                        <li>{{ .list9 }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+
+    {{- partial "sub-contact.html" . }}
+
+{{ end }}

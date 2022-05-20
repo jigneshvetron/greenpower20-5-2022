@@ -1,0 +1,183 @@
+{{ define "main" }}
+    <!-- Start of Slider section -->
+    {{ with .Params.slider }}
+        <section class="inner-banner">
+            <div class="slider-child view1">
+                <div class="slider-img-bg img-zooming" data-background="{{ .Newsbanner | absURL }}"></div>
+                <div class="background_overlay"></div>
+                <div class="container">
+                    <div class="slider-content-box sec-title">
+                        <h1 class="p-0 m-0">{{ .Title }}</h1>
+                        <p class="mb-3" style="text-align:justify;">{{ .Desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+    <!-- End of Slider section -->
+    {{ with .Params.block }}
+        <section class="sec-gap">
+            <div class="container">
+                <div class="row g-3 g-xl-5 align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="sec-head sec-title">
+                            <span class="title-tag"><img src="{{ .Icon5 | absURL }}" alt="">{{ .Whoweare }}</span>
+                            <h2 class="h1">{{ .Title }}</h2>
+                        </div>
+                        <!-- title -->
+                        <div class="sec-body">
+                            <div class="row gy-2 gy-lg-4">
+                                <div class="col-12">
+                                    <div class="sp-pera">
+                                        <p>{{ .Desc1 }}</p>
+                                        <p>{{ .Desc2 }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <a target="_blank" class="btn-icon link-arrow text-uppercase" href="https://www.youtube.com/watch?v=xKxrkht7CpY">
+                                        <span>{{ .Span }}</span>
+                                        <i class="arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-img row g-2 g-xl-3">
+                            <div class="col-12">
+                                <div class="ratio">
+                                    <img src="{{ .Ab1 | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="ratio">
+                                    <img src="{{ .Ab2 | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="ratio">
+                                    <img src="{{ .Ab3 | absURL }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+
+    {{ with .Params.block2 }}
+        <section class="sec-gap d-bg">
+            <video class="bg-item" autoplay="" loop="true" muted="">
+                <source type="video/mp4" src="{{ .video | absURL }}">
+            </video>
+            <div class="bg-item overlay"></div>
+            <div class="container">
+                <!-- /title -->
+                <div class="sec-body">
+                    <div class="row g-2 g-lg-3 site-info-content view2">
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <div class="site-info-icon-text position-relative">
+                                <div class="site-info-icon float-left">
+                                    <img src="{{ .stateofart | absURL }}" alt="">
+                                </div>
+                                <div class="site-info-text headline">
+                                    <h4 class="h5">{{ .title1 }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <div class="site-info-icon-text position-relative">
+                                <div class="site-info-icon float-left">
+                                    <img src="{{ .bestalticon | absURL }}" alt="">
+                                </div>
+                                <div class="site-info-text headline">
+                                    <h4 class="h5">{{ .title2 }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <div class="site-info-icon-text position-relative">
+                                <div class="site-info-icon float-left">
+                                    <img src="{{ .globalexpertise  | absURL }}" alt="">
+                                </div>
+                                <div class="site-info-text headline">
+                                    <h4 class="h5">{{ .title3 }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <div class="site-info-icon-text position-relative">
+                                <div class="site-info-icon float-left">
+                                    <img src="{{ .lowcost  | absURL }}" alt="">
+                                </div>
+                                <div class="site-info-text headline">
+                                    <h4 class="h5">{{ .title4 }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+
+    {{ with .Params.block3 }}
+        <section class="sec-gap advantage-section">
+            <div class="container">
+                <div class="sec-head sec-title title-middle text-center mx6 m-auto">
+                    <span class="title-tag">{{ .span }}</span>
+                    <h2>{{ .title }}</h2>
+                    <p>{{ .Desc }}</p>
+                </div>
+                <!-- /title -->
+                <div class="sec-body">
+                    <div class="row g-2 g-lg-4">
+                        <div class="col-12 col-sm-4">
+                            <div class="box box-step">
+                                <img class="bg-img" src="{{ .step1 | absURL }}" alt="">
+                                <div class="step-text">
+                                    <div class="step-count">
+                                        <span class="step-label">{{ .step }}</span>
+                                        <span class="count">01</span>
+                                    </div>
+                                    <h3>{{ .h31 }}</h3>
+                                    <p>{{ .desc1 }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="box box-step">
+                                <img class="bg-img" src="{{ .step2 | absURL }}" alt="">
+                                <div class="step-text">
+                                    <div class="step-count">
+                                        <span class="step-label">{{ .step }}</span>
+                                        <span class="count">02</span>
+                                    </div>
+                                    <h3>{{ .h32 }}</h3>
+                                    <p>{{ .desc2 }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="box box-step">
+                                <img class="bg-img" src="{{ .step3 | absURL }}" alt="">
+                                <div class="step-text">
+                                    <div class="step-count">
+                                        <span class="step-label">{{ .step }}</span>
+                                        <span class="count">03</span>
+                                    </div>
+                                    <h3>{{ .h33 }}</h3>
+                                    <p>{{ .desc3 }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+
+    {{- partial "sub-contact.html" . }}
+
+{{ end }}
